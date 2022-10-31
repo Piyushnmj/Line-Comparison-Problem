@@ -32,11 +32,11 @@
             double lengthOfLine2 = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Pow(b2 - b1, 2));
             Console.WriteLine($"\nLength of the Line 2 is {lengthOfLine2}");
 
-            if (lengthOfLine1 > lengthOfLine2)
+            if (lengthOfLine2.CompareTo(lengthOfLine1) < 0)
             {
                 Console.WriteLine("\nThe Line 1 is greater");
             }
-            else if (lengthOfLine1 < lengthOfLine2)
+            else if (lengthOfLine2.CompareTo(lengthOfLine1) > 0)
             {
                 Console.WriteLine("\nThe Line 2 is greater");
             }
